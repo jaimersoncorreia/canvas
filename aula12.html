@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Primeiro teste com canvas</title>
+    </head>
+    <body>
+        <canvas id="c" width="500" height="500"></canvas>
+        <script>
+            var c = document.querySelector("#c");
+            var ctx = c.getContext("2d");
+
+            ctx.fillRect(100, 100, 100, 100);
+            ctx.strokeRect(50,50,50,50);
+            
+            ctx.beginPath();
+            ctx.moveTo(10, 10);
+            ctx.lineTo(50, 10);
+            ctx.lineTo(50, 50);
+            ctx.lineTo(10, 10);
+            //ctx.fill();// com preenchimento
+            ctx.stroke();//sem preencimento
+            
+            image.src = "https://www.fasdapsicanalise.com.br/content/uploads/2017/08/pregui%C3%A7a-696x415.jpg";
+        </script>
+    </body>
+</html>

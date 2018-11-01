@@ -1,10 +1,21 @@
 <html>
-    <head></head>
+    <head>
+        <title>Primeiro teste com canvas</title>
+    </head>
     <body>
         <canvas id="c" width="200" height="200"></canvas>
         <script>
             var c = document.querySelector("#c");
             var ctx = c.getContext("2d");
+
+            var image = new Image();
+            image.onload = function(){
+                console.log("Loaded image");
+                ctx.drawImage(image,0,0,c.width,c.height);
+                var saveImage = c.toDataURL();
+                window.open(saveImage);
+            }
+            image.src = "https://www.fasdapsicanalise.com.br/content/uploads/2017/08/pregui%C3%A7a-696x415.jpg";
         </script>
     </body>
 </html>

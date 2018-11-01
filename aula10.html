@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Primeiro teste com canvas</title>
+    </head>
+    <body>
+        <canvas id="c" width="500" height="500"></canvas>
+        <script>
+            var c = document.querySelector("#c");
+            var ctx = c.getContext("2d");
+
+            ctx.fillStyle = "blue";
+            // Start at (0,0) and draw a 50px x 50px blue rectangle.
+            ctx.fillRect(0,0,50,50);
+            // Start at (0,0) and clear a 25px x 25px rectangle.
+            ctx.clearRect(0,0,25,25);
+
+            ctx.fillRect(100, 100, 100, 100);
+            ctx.strokeRect(50,50,50,50);
+            var x = 200;
+            var y = 200;
+            var largura = 100;
+            var altura = 150;
+            ctx.fillStyle = "red";
+            ctx.fillRect(x, y, largura, altura);
+            ctx.clearRect(x,200,100,75);
+            //limpar tudo
+            //ctx.clearRect(0, 0, c.width, c.height);
+            
+            image.src = "https://www.fasdapsicanalise.com.br/content/uploads/2017/08/pregui%C3%A7a-696x415.jpg";
+        </script>
+    </body>
+</html>
